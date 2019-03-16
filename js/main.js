@@ -14,6 +14,8 @@ function getImage(containerId) {
             container.removeChild(container.firstChild);
             img.setAttribute("src", parsed.message);
             container.appendChild(img);
+            img.style.height = "30rem";
+            img.style.width = "30rem";
         } else {
             container.removeChild(container.firstChild);
             container.appendChild(p);
